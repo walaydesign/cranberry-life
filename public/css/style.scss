@@ -531,6 +531,7 @@ main {
         position: relative;
         h2 {
           font-size: 27px;
+          letter-spacing: 0.2em;
         }
         &::after {
           position: absolute;
@@ -1105,6 +1106,14 @@ main {
         &_main {
           width: fit-content;
           margin: 0 auto;
+          .title {
+            &-en, &-line {
+              order: 2;
+            }
+            &-ch {
+              order: 1;
+            }
+          }
         }
       }
       &_btns {
@@ -1149,7 +1158,7 @@ main {
   }
   @media screen and (max-width: 1300px) {
     .swiper-tab_text_title {
-      gap: 60px;
+      gap: 54px;
     }
   }
 }

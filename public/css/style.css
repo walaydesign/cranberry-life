@@ -629,6 +629,7 @@ main {
   }
   .kv_h2 li h2 {
     font-size: 27px;
+    letter-spacing: 0.2em;
   }
   .kv_h2 li::after {
     position: absolute;
@@ -1297,6 +1298,16 @@ main {
     width: fit-content;
     margin: 0 auto;
   }
+  .swiper-tab_text_main .title-en, .swiper-tab_text_main .title-line {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .swiper-tab_text_main .title-ch {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .swiper-tab_btns {
     padding-bottom: 40px;
     -webkit-transform: none !important;
@@ -1350,7 +1361,7 @@ main {
 
 @media screen and (max-width: 1300px) {
   #swiper-tab-2 .swiper-tab_text_title {
-    gap: 60px;
+    gap: 54px;
   }
 }
 
