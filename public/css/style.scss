@@ -432,7 +432,7 @@ main {
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.15em;
         .highlight {
           color: #cb4592;
           width: 42px;
@@ -447,6 +447,7 @@ main {
           font-weight: 700;
           line-height: 42px;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          margin-right: 5px;
           span {
             display: block;
             text-align: center;
@@ -558,13 +559,16 @@ main {
         padding: 0 8px;
         h3 {
           font-size: 21px;
+          letter-spacing: 0.2em;
           .highlight {
             width: 24px;
             height: 24px;
             font-size: 23px;
             line-height: 24px;
+            margin-right: 5px;
             span {
               transform: translate(1px, -1px);
+              letter-spacing: 0.1em;
             }
           }
         }

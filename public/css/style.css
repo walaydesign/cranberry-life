@@ -500,7 +500,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 .kv_h3 li h3 .highlight {
@@ -524,6 +524,7 @@ main {
   line-height: 42px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
 }
 
 .kv_h3 li h3 .highlight span {
@@ -655,16 +656,19 @@ main {
   }
   .kv_h3 li h3 {
     font-size: 21px;
+    letter-spacing: 0.2em;
   }
   .kv_h3 li h3 .highlight {
     width: 24px;
     height: 24px;
     font-size: 23px;
     line-height: 24px;
+    margin-right: 5px;
   }
   .kv_h3 li h3 .highlight span {
     -webkit-transform: translate(1px, -1px);
             transform: translate(1px, -1px);
+    letter-spacing: 0.1em;
   }
   .kv_h3 li::after {
     height: 13px;
