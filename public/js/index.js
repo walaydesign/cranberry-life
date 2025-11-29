@@ -96,25 +96,25 @@ var swiperArrange = new Swiper(".arrange_swiper", {
   },
 });
 
-function sendEmail() {
-  Email.send({
-    SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-    To: "zhulixdesign@gmail.com, zhuli705098@gmail.com",
-    From: "walayydesign@gmail.com",
-    Subject: "航綻甜心預約賞屋",
-    Body:
-      "姓名:" +
-      document.getElementById("name").value +
-      "<br>聯絡電話:" +
-      document.getElementById("phone").value +
-      "<br>LINE ID:" +
-      document.getElementById("line").value +
-      "<br>居住地區:" +
-      document.getElementById("area").value +
-      "<br>留言:" +
-      document.getElementById("mesage").value,
-  }).then((message) => alert("感謝您的來信！我們很快就會和您聯繫！"));
-}
+(function () {
+  emailjs.init("3j4kNvskrhLw3SIso");
+})();
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_eyyx1dp", "template_v86sxu7", this).then(
+      () => {
+        alert("感謝您的來信！我們很快就會和您聯繫！");
+        this.reset();
+      },
+      (error) => {
+        alert("寄送失敗，請稍後再試");
+      }
+    );
+  });
 
 $(window).on("resize", function () {
   mapResize();
